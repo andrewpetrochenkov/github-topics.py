@@ -4,7 +4,7 @@ import click
 import github_topics
 
 MODULE_NAME = "github_topics.replace"
-USAGE = 'python -m %s fullname topics ...' % MODULE_NAME
+USAGE = 'python -m %s fullname topic ...' % MODULE_NAME
 PROG_NAME = 'python -m %s' % USAGE
 
 

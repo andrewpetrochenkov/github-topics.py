@@ -24,10 +24,10 @@ function|`__doc__`
 #### CLI
 usage|`__doc__`
 -|-
-`python -m github_topics.add fullname topics ...`|add repo topics
+`python -m github_topics.add fullname topic ...`|add repo topics
 `python -m github_topics.clear fullname`|remove all repo topics
 `python -m github_topics.get fullname`|print repo topics
-`python -m github_topics.remove fullname topics ...`|remove repo topics
-`python -m github_topics.replace fullname topics ...`|set repo topics
+`python -m github_topics.remove fullname topic ...`|remove repo topics
+`python -m github_topics.replace fullname topic ...`|set repo topics
 
 <p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
