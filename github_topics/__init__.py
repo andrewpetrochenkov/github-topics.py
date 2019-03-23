@@ -13,7 +13,7 @@ def _get_repo(fullname):
 
 @public.add
 def get(fullname):
-    """return list of repo topics"""
+    """return a list of repo topics"""
     return _get_repo(fullname).get_topics()
 
 
