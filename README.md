@@ -1,5 +1,6 @@
 <!--
 https://pypi.org/project/readme-generator/
+https://pypi.org/project/python-readme-generator/
 -->
 
 [![](https://img.shields.io/pypi/pyversions/github-topics.svg?longCache=True)](https://pypi.org/project/github-topics/)
@@ -21,7 +22,7 @@ function|`__doc__`
 -|-
 `github_topics.replace(fullname, topics)` |replace repo topics
 
-#### CLI
+#### Executable modules
 usage|`__doc__`
 -|-
 `python -m github_topics.add fullname topic ...` |add repo topics
@@ -31,5 +32,5 @@ usage|`__doc__`
 `python -m github_topics.replace fullname topic ...` |set repo topics
 
 <p align="center">
-    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
 </p>
