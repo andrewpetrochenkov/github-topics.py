@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+__all__ = ['add', 'clear', 'get', 'replace', 'rm']
+
+
 import github
 import os
-import public
 
 
 def _get_repo(fullname):
@@ -11,19 +12,16 @@ def _get_repo(fullname):
     return g.get_user().get_repo(fullname)
 
 
-@public.add
 def get(fullname):
     """return a list of repo topics"""
     return _get_repo(fullname).get_topics()
 
 
-@public.add
 def replace(fullname, topics):
     """replace repo topics"""
     return _get_repo(fullname).replace_topics(list(topics))
 
 
-@public.add
 def add(fullname, topics):
     """add repo topics"""
     old_topics = get(fullname)
@@ -31,7 +29,6 @@ def add(fullname, topics):
     replace(fullname, new_topics)
 
 
-@public.add
 def rm(fullname, topics):
     """remove repo topics"""
     old_topics = get(fullname)
@@ -39,7 +36,6 @@ def rm(fullname, topics):
     replace(fullname, new_topics)
 
 
-@public.add
 def clear(fullname):
     """remove all repo topics"""
     replace(fullname, [])
